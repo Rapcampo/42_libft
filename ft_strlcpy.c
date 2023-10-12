@@ -6,7 +6,7 @@
 /*   By: rapcampo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:03:19 by rapcampo          #+#    #+#             */
-/*   Updated: 2023/10/06 13:39:42 by rapcampo         ###   ########.fr       */
+/*   Updated: 2023/10/12 13:59:54 by rapcampo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,10 @@
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
+	size_t	src_len;
 
 	i = 0;
+	src_len = ft_strlen(src);
 	if (size > 0)
 	{
 		while (i < size - 1 && (src[i]))
@@ -26,5 +28,5 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		}
 		dst[i] = '\0';
 	}
-	return (i);
+	return (src_len);
 }

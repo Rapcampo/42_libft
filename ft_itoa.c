@@ -6,7 +6,7 @@
 /*   By: rapcampo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 16:57:04 by rapcampo          #+#    #+#             */
-/*   Updated: 2023/10/10 16:57:08 by rapcampo         ###   ########.fr       */
+/*   Updated: 2023/10/12 13:36:59 by rapcampo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 static unsigned int	ft_number_size(int number)
 {
-	unsigned int	lenght;
+	unsigned int	length;
 
-	lenght = 0;
+	length = 0;
 	if (number == 0)
 		return (1);
 	if (number < 0)
@@ -31,7 +31,7 @@ static unsigned int	ft_number_size(int number)
 
 char	*ft_itoa(int n)
 {
-	char		*string;
+	char			*string;
 	unsigned int	number;
 	unsigned int	length;
 
@@ -39,7 +39,7 @@ char	*ft_itoa(int n)
 	string = (char *)malloc(sizeof(char) * (length + 1));
 	if (string == NULL)
 		return (NULL);
-	if (number < 0)
+	if (n < 0)
 	{
 		string[0] = '-';
 		number = -n;

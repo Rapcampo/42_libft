@@ -6,7 +6,7 @@
 /*   By: rapcampo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 15:03:28 by rapcampo          #+#    #+#             */
-/*   Updated: 2023/10/05 15:03:30 by rapcampo         ###   ########.fr       */
+/*   Updated: 2023/10/12 13:34:10 by rapcampo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ int	ft_strlen(const char *str)
 {
 	int	i;
 
-	i = 0;
-	while (str[i++])
+	i = -1;
+	while (str[++i])
 		;
 	return (i);
 }

@@ -6,7 +6,7 @@
 /*   By: rapcampo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 18:23:45 by rapcampo          #+#    #+#             */
-/*   Updated: 2023/10/10 18:23:46 by rapcampo         ###   ########.fr       */
+/*   Updated: 2023/10/12 15:21:33 by rapcampo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@ char	*ft_strchr(const char *s, int i)
 {
 	while (*s)
 	{
-		if (*s == i)
+		if (*s == (unsigned char)i)
 			return ((char *)s);
 		s++;
 	}
-	if (i == '\0')
+	if ((unsigned char)i == '\0')
 		return ((char *)s);
-	return (0);
+	return (NULL);
 }
