@@ -6,6 +6,14 @@
 # include <stdio.h>
 # include <string.h>
 
+//typedef struct for bonus//
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+
 //libc functions//
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
