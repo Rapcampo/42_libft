@@ -6,7 +6,7 @@
 /*   By: rapcampo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 13:37:38 by rapcampo          #+#    #+#             */
-/*   Updated: 2023/10/12 13:37:41 by rapcampo         ###   ########.fr       */
+/*   Updated: 2023/10/15 16:34:03 by rapcampo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	write (fd, s, ft_strlen(s));
+	size_t	len;
+
+	len = ft_strlen(s);
+	write(fd, s, len);
 }
