@@ -49,7 +49,7 @@ This is the first project of the common core for the 42 programming school, as s
 
 # Function Breakdown
 
-For each function there will be a brief description with a link to a detailed wiki style overview of how the function works (work in progress...). This detailed description is done with the porpuse of a better understanding of how each of this function works as well as the structure of their syntax. 
+For each function there will be a brief description with a link to a detailed wiki style overview of how the function works (work in progress...). This detailed description is done with the porpuse of a better understanding of how each of these function works as well as the structure of their syntax. 
 
 ## Mandatory Functions
 
